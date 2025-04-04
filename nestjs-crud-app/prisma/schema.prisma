@@ -1,0 +1,17 @@
+model Usuario {
+  id            Int      @id @default(autoincrement())
+  nombre        String
+  email         String   @unique
+  password      String
+  fechaCreacion DateTime @default(now())
+  productos     Producto[]
+}
+
+model Producto {
+  id          Int      @id @default(autoincrement())
+  nombre      String
+  descripcion String
+  precio      Float
+  usuarioId   Int
+  usuario     Usuario  @relation(fields: [usuarioId], references: [id])
+}

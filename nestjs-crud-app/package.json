@@ -1,0 +1,39 @@
+{
+  "name": "nestjs-crud-app",
+  "version": "1.0.0",
+  "description": "A CRUD application using NestJS and Prisma with PostgreSQL",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "build": "nest build",
+    "lint": "eslint . --ext .ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
+  },
+  "dependencies": {
+    "@nestjs/common": "^9.0.0",
+    "@nestjs/core": "^9.0.0",
+    "@nestjs/platform-express": "^9.0.0",
+    "class-validator": "^0.13.2",
+    "class-transformer": "^0.5.0",
+    "prisma": "^3.0.0",
+    "@prisma/client": "^3.0.0",
+    "pg": "^8.7.1",
+    "@nestjs/swagger": "^5.0.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^9.0.0",
+    "@nestjs/testing": "^9.0.0",
+    "typescript": "^4.5.4",
+    "ts-jest": "^27.0.0",
+    "jest": "^27.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-prettier": "^4.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
